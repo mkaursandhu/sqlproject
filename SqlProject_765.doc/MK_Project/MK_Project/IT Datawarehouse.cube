@@ -1,0 +1,294 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3d6d74fa-0420-4762-ab8f-2e10049fed05" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IT Datawarehouse</ID>
+  <Name>IT Datawarehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c5e293a4-a185-4d59-8267-ddff215256c3">
+      <ID>Fact Purchase Table</ID>
+      <Name>Fact Purchase Table</Name>
+      <DimensionID>Fact Purchase Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4cd3b9be-dee7-4e7a-8c79-7fbbed65510b">
+          <AttributeID>Purchase Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ebc09c3-2e3f-4319-b118-533dd3b81363">
+          <AttributeID>Equip Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9cf08d26-d17d-4352-9a24-292ffbbfeb7e">
+      <ID>Equipment</ID>
+      <Name>Equipment</Name>
+      <DimensionID>Equipment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e801dc2f-a077-4340-9e23-a2b4b21d0ef9">
+          <AttributeID>Equip Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0f6e9051-409d-4d0c-961d-bed7d60cdfa2">
+      <ID>Equipment 1</ID>
+      <Name>Equipment 1</Name>
+      <DimensionID>Equipment 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad3fb82a-db78-41a8-8f56-b2d6c3f18982">
+          <AttributeID>Equip Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="8101b63c-2df3-41cd-9aee-30e50e810228">
+      <ID>Fact Purchase Table</ID>
+      <Name>Fact Purchase Table</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="25cb24c7-a5da-4e69-b0ae-84fe06e4a9dd">
+          <ID>Equip Quantity</ID>
+          <Name>Equip Quantity</Name>
+          <Source dwd:design-time-name="397c8338-e726-407f-ac07-d66c41fe8099">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8a9bf705-35eb-4363-8983-7ff9326deb45">
+              <TableID>dbo_Fact_Purchase_Table</TableID>
+              <ColumnID>equip_quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6761b6da-88e8-4fd1-9376-e6cd68331bb2">
+          <ID>Equip Costprice</ID>
+          <Name>Equip Costprice</Name>
+          <Source dwd:design-time-name="54afb7f0-9d21-4e14-b343-a65404c22abf">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="006d373c-bea6-479d-8d2c-c5936a77fd29">
+              <TableID>dbo_Fact_Purchase_Table</TableID>
+              <ColumnID>equip_costprice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6c5d6c0e-2959-46cc-a3bb-fe3e7f19a48c">
+          <ID>Total Amount</ID>
+          <Name>Total Amount</Name>
+          <Source dwd:design-time-name="e9506871-6cd5-4198-9ea5-9bd378cd64ad">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fcd48740-ec9a-4764-9475-550fe6235430">
+              <TableID>dbo_Fact_Purchase_Table</TableID>
+              <ColumnID>total_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ae3092e5-49e6-483d-9ce3-d6a75a8dc6ac">
+          <ID>Fact Purchase Table Count</ID>
+          <Name>Fact Purchase Table Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4343a49a-6ae0-431a-aac3-b528d8eb0630">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="324c6987-a753-4375-9aab-cddb7fcea077">
+              <TableID>dbo_Fact_Purchase_Table</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="c5f81948-0c64-48c3-8f2c-02c1efb6e372">
+          <CubeDimensionID>Fact Purchase Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47d826b1-54cb-4705-8218-a14270832afc">
+              <AttributeID>Purchase Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="739d7e97-430f-4743-a33f-129d0708550f">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="32e55a4c-bf9f-46b4-8b49-7bd5dce42189">
+                    <TableID>dbo_Fact_Purchase_Table</TableID>
+                    <ColumnID>purchase_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a294763a-e063-4636-85af-3b131a40debd">
+          <CubeDimensionID>Equipment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5bcad4d5-2b09-4b11-8cfe-fa981ee7faec">
+              <AttributeID>Equip Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dd8f6883-8682-499e-8245-41c52a6d1bfa">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5ab9e19d-9c5b-471e-99b4-1b00edac7c84">
+                    <TableID>dbo_Fact_Purchase_Table</TableID>
+                    <ColumnID>equip_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6e33e1bf-d93f-430b-bbab-dd8a8fe4d9aa">
+          <CubeDimensionID>Equipment 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="efce9ed2-3aad-45e1-addc-a37bd59d05fd">
+              <AttributeID>Equip Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Purchase Table</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Equip Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d070fba4-8f4b-45c4-b1c2-4af5bed0bb66">
+      <ID>Equipment</ID>
+      <Name>Equipment</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="85799d96-5269-4d00-bab8-0b91c045b40e">
+          <ID>Equip Quantity - Equipment</ID>
+          <Name>Equip Quantity - Equipment</Name>
+          <Source dwd:design-time-name="5e0b9ba3-44e8-421a-a6c1-11a6a24e396f">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fb5e4f7c-d02a-4d51-9268-08715632ec3e">
+              <TableID>dbo_Equipment</TableID>
+              <ColumnID>equip_quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fd4c6343-08c1-40aa-a5ba-400054f413ca">
+          <ID>Equip Costprice - Equipment</ID>
+          <Name>Equip Costprice - Equipment</Name>
+          <Source dwd:design-time-name="16fb4b50-dfd4-485e-9b37-1bd28626cf09">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e1735215-5466-4396-964d-859b05f35c53">
+              <TableID>dbo_Equipment</TableID>
+              <ColumnID>equip_costprice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7120b8ce-e928-41fc-a554-72d3912afdf2">
+          <ID>Equip Sellingprice</ID>
+          <Name>Equip Sellingprice</Name>
+          <Source dwd:design-time-name="ad9d1119-a21f-4530-a424-830a2769443a">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3daf937c-907b-4a92-9f58-f1a9e7f2d262">
+              <TableID>dbo_Equipment</TableID>
+              <ColumnID>equip_sellingprice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf51b83a-16a5-4a05-8aa9-ac785ae6ae33">
+          <ID>Equipment Count</ID>
+          <Name>Equipment Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a9fc3067-e51a-4fb5-bf06-efcdc0c17432">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ff836aeb-e421-4c18-8eff-0085d2bb168f">
+              <TableID>dbo_Equipment</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="6650faf4-12da-4fa8-b69a-c0ed1cba1d7b">
+          <CubeDimensionID>Equipment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b7e3956-b761-450d-9968-1ceec137e42d">
+              <AttributeID>Equip Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="08bd2faa-2e91-45e4-8bcc-dbea892596a7">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7b374c37-b90b-4910-92ca-deeb1cf9be96">
+                    <TableID>dbo_Equipment</TableID>
+                    <ColumnID>equip_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="30decc3f-c4d1-40ef-9a1b-1088414d7355">
+          <CubeDimensionID>Equipment 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d60167f4-6472-4aaf-9e2f-98a84017339a">
+              <AttributeID>Equip Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9eaba749-40d1-4d47-b702-c834b920788a">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c5348509-b8fa-4a92-81c6-c7471991c306">
+                    <TableID>dbo_Equipment</TableID>
+                    <ColumnID>equip_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="16d31416-ae1c-4102-8a86-f73c5d234d08">
+    <DataSourceViewID>IT Datawarehouse</DataSourceViewID>
+  </Source>
+</Cube>

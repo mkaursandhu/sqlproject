@@ -1,0 +1,11 @@
+equip_id,equip_name,equip_quantity,equip_costprice,equip_sellingprice
+1,Server,1,500,700
+2,Desktop,1,250,300
+3,CPU,1,600,750
+4,Security Camara,1,150,200
+5,Laptop,1,1000,1200
+6,Modem,1,35,50
+7,Router,1,400,500
+8,Firewall,1,500,600
+9,Switces,1,500,650
+10,Software,1,350,500

@@ -1,0 +1,6 @@
+ticket_id,ticket_date,clientorg_id,clientorg_complaint,complaint_status
+1,3/2/2020,1,Server-down,Pending
+2,8/4/2020,1,Slow-speed,Pending
+3,4/5/2020,4,Visibility-issue,Pending
+4,5/5/2020,5,Laptop-Batery Problem,Replace Batery
+5,10/2/2020,3,Slow-performance,Problem-solved

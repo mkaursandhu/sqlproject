@@ -1,0 +1,8 @@
+receipt_id,equip_id,clientorg_id,purchase_id,payment_method,payment_status,total_amount
+1,1,1,1,Cheque,Received,75000
+2,2,2,2,Cheque,Received,7500
+3,3,3,3,Cheque,Received,20400
+4,4,4,4,Cheque,Received,2250
+5,5,5,5,Cheque,Waiting,25000
+6,6,6,6,Cheque,Received,700
+7,7,7,7,Cheque,Received,12000

@@ -1,0 +1,9 @@
+dept_id,dept_name,dept_add_street,dept_add_city,phone_number
+,,,,
+1,Quality,1st floor,Brampton,456789654
+2,HR,2nd floor,Brampton,455673432
+3,CustomerCare,3rd floor,Brampton,497652132
+4,R&D,4th floor,Brampton,478764536
+5,Prouction,Ground floor,Brampton,454258790
+6,Purchase,3rd floor,Brampton,459870567
+7,Sell,5th floor,Brampton,467894321

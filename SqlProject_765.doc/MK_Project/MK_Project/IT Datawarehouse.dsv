@@ -1,0 +1,141 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="466f8051-d143-4176-aba8-2b669030a82f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IT Datawarehouse</ID>
+  <Name>IT Datawarehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>IT Datawarehouse</DataSourceID>
+  <Schema>
+    <xs:schema id="IT_x0020_Datawarehouse" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="IT_x0020_Datawarehouse" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e4a0cc4e-bd66-47ba-803e-d82e10bff105">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_Purchase_Table" msprop:design-time-name="7f6b3146-ed74-468d-8f61-e5b341999db1" msprop:DbTableName="Fact_Purchase_Table" msprop:FriendlyName="Fact_Purchase_Table" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="purchase_id" msprop:design-time-name="39f9a7c1-5f09-4d28-982c-0e35d45f5e82" msprop:DbColumnName="purchase_id" msprop:FriendlyName="purchase_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="purchase_date" msprop:design-time-name="1ac088c3-ec2d-41a3-93e7-a1bf0b11e64e" msprop:DbColumnName="purchase_date" msprop:FriendlyName="purchase_date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="cllient_id" msprop:design-time-name="59f038b5-f804-476c-9ef8-26dfcaeae844" msprop:DbColumnName="cllient_id" msprop:FriendlyName="cllient_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="equip_id" msprop:design-time-name="e997cfc1-8b7a-46f6-96cc-b8f798f65ec5" msprop:DbColumnName="equip_id" msprop:FriendlyName="equip_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="emp_id" msprop:design-time-name="21b3b9cf-45eb-4a76-8ab3-d168d4e9d1c9" msprop:DbColumnName="emp_id" msprop:FriendlyName="emp_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="service_id" msprop:design-time-name="c835c792-327a-4142-a429-f1eb43425abd" msprop:DbColumnName="service_id" msprop:FriendlyName="service_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="order_id" msprop:design-time-name="d62c72cc-ecbf-48aa-96ae-eddb77e90fd6" msprop:DbColumnName="order_id" msprop:FriendlyName="order_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="equip_quantity" msprop:design-time-name="e0c996dc-055c-49c0-86d3-e57a6635a5dd" msprop:DbColumnName="equip_quantity" msprop:FriendlyName="equip_quantity" type="xs:long" minOccurs="0" />
+                  <xs:element name="equip_costprice" msprop:design-time-name="2c6c9d4b-6a8f-4fa4-9be4-1604eef279c2" msprop:DbColumnName="equip_costprice" msprop:FriendlyName="equip_costprice" type="xs:long" minOccurs="0" />
+                  <xs:element name="total_amount" msprop:design-time-name="a2309d33-338d-465c-8ffe-8b01aaa3a367" msprop:DbColumnName="total_amount" msprop:FriendlyName="total_amount" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Equipment" msprop:design-time-name="393066a0-db09-42b3-8fb5-9f6ef3dc117b" msprop:DbTableName="Equipment" msprop:FriendlyName="Equipment" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="equip_id" msprop:design-time-name="ba2903ef-db91-461b-a7cd-45b5b536adb9" msprop:DbColumnName="equip_id" msprop:FriendlyName="equip_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="equip_name" msprop:design-time-name="b785c7f4-5800-44c9-b6ec-95e49af356c4" msprop:DbColumnName="equip_name" msprop:FriendlyName="equip_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="equip_quantity" msprop:design-time-name="def11cf5-cfdd-40e8-8728-2ec611f00e9d" msprop:DbColumnName="equip_quantity" msprop:FriendlyName="equip_quantity" type="xs:long" minOccurs="0" />
+                  <xs:element name="equip_costprice" msprop:design-time-name="e9d33cd2-8fe3-4a00-8dc5-a046749d2ba2" msprop:DbColumnName="equip_costprice" msprop:FriendlyName="equip_costprice" type="xs:long" minOccurs="0" />
+                  <xs:element name="equip_sellingprice" msprop:design-time-name="312b3d7a-c5ff-4c45-8316-16e885c07d36" msprop:DbColumnName="equip_sellingprice" msprop:FriendlyName="equip_sellingprice" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Purchase_Table" />
+          <xs:field xpath="purchase_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Equipment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Equipment" />
+          <xs:field xpath="equip_id" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_Purchase_Table_Equipment" refer="dbo_Equipment_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Purchase_Table" />
+          <xs:field xpath="equip_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <IT_x0020_Datawarehouse xmlns="" />
+  </Schema>
+</DataSourceView>

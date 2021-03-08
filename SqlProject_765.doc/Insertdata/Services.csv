@@ -1,0 +1,8 @@
+service_id,service_name,service_time,cost
+1,Maintentace,2 months,500
+2,Programming,2 month,747
+3,Training,1 month,300
+4,Providing Products,20 days,1000
+5,Networkig,15 days,2500
+6,Database,1 month,3000
+7,WAN Implementation,20 days,4500
